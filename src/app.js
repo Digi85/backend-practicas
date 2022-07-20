@@ -4,6 +4,8 @@ import personaRoutes from './routes/persona.routes'
 import alumnoRoutes from './routes/alumno.routes'
 import tutorRoutes from './routes/tutor.routes'
 import cursoRoutes from './routes/curso.routes'
+import actividadRoutes from './routes/actividad.routes'
+import documentoRoutes from './routes/documento.routes'
 
 const app = express();
 var cors = require('cors');
@@ -20,4 +22,6 @@ app.use('/api/auth/persona', personaRoutes)
 app.use('/api/auth/alumno', alumnoRoutes)
 app.use('/api/auth/tutor', tutorRoutes)
 app.use('/api/auth/curso', cursoRoutes)
+app.use('/api/auth/actividad', actividadRoutes)
+app.use('/api/auth/documento', documentoRoutes)
 export default app;
